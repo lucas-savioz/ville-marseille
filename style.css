@@ -1,0 +1,452 @@
+body,
+html {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    height: 1500vh;
+    background-color: rgb(41, 32, 23);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'AlexBrush';
+    src: url(fonts/alex-brush/AlexBrush-Regular.ttf);
+}
+
+/* Titre ville de Marseille */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 105vh;
+    background-image: url("pics/home/home-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header-text {
+    text-align: center;
+    color: #fff;
+    width: max-content;
+    padding-top: 35vh;
+    text-shadow: 1px 1px 0 rgb(41, 32, 23), -1px -1px 0 rgb(41, 32, 23), 1px -1px 0 rgb(41, 32, 23), -1px 1px 0 rgb(41, 32, 23);
+}
+
+#header-text h1 {
+    font-size: 120px;
+    font-family: 'AlexBrush';
+    margin: 0;
+}
+
+/* Barre de navigation */
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(41, 32, 23);
+}
+
+/* Paramètrage des a */
+
+#navbar a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 20px;
+}
+
+/* Effet de survol des a */
+
+#navbar a:hover {
+    background-color: #004daaae;
+    color: #fff;
+}
+
+/* Bienvenue à Marseille */
+
+#home_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home_title h2 {
+    font-size: 50px;
+    margin-top: 300px;
+    background-color: #004daaae;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#home_title p {
+    width: 65%;
+    font-size: 25px;
+    padding-top: 100px;
+    text-align: justify;
+    padding-bottom: 500px;
+    line-height: 1.6;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.main_content img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.main_content .main_content_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+.main_content_2 p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.main_content_2 h3 {
+    font-size: 30px;
+}
+
+
+
+/* Les incontournables */
+
+#les_incontournables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#les_incontournables h2 {
+    font-size: 50px;
+    margin-top: 300px;
+    background-color: #004daaae;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#les_incontournables p {
+    width: 65%;
+    font-size: 25px;
+    padding-top: 100px;
+    text-align: justify;
+    padding-bottom: 500px;
+    line-height: 1.6;
+}
+
+.incontournables {
+    display: flex;
+    flex-grow: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.content_incon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 30vw;
+    padding: 1vw;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.content_incon h1 {
+    font-size: 30px;
+}
+.content_incon p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.content_incon h1, .content_incon p{
+    display: none;
+    transition: 1;
+    color: white;
+    text-shadow: 1px 1px 0 rgb(41, 32, 23), -1px -1px 0 rgb(41, 32, 23), 1px -1px 0 rgb(41, 32, 23), -1px 1px 0 rgb(41, 32, 23);
+}
+
+.content_incon:hover h1, .content_incon:hover p{
+    display: block;
+}
+
+button {
+    margin-left: 19vh;
+    margin-top: 20px;
+    background-color: #004daa;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 15vh;
+    height: 5vh;
+}
+
+button:hover {
+    transition: 0.5s;
+    color: #004daaae;
+    background-color: none;
+}
+
+#content_incon_img_1{
+    background-image: url("pics/home/vieuxport.jpg");
+}
+#content_incon_img_2{
+    background-image: url("pics/home/notre_dame_de_la_garde.jpg");
+}
+#content_incon_img_3{
+    background-image: url("pics/home/abbaye_saint_victor.jpg");
+}
+#content_incon_img_4{
+    background-image: url("pics/home/calanques_marseille.jpg");
+}
+#content_incon_img_5{
+    background-image: url("pics/home/palais_longchamp.jpg");
+}
+#content_incon_img_6{
+    background-image: url("pics/home/velodrome.jpg");
+}
+
+
+
+
+/* Actualités */
+
+#actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#actualites p {
+    width: 65%;
+    font-size: 25px;
+    padding-top: 100px;
+    text-align: justify;
+    padding-bottom: 500px;
+    line-height: 1.6;
+}
+
+#actualites h1 {
+    font-size: 50px;
+    margin-top: 300px;
+    background-color: #004daaae;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    animation: carousel-animation 9s infinite; /* Changer la durée selon vos besoins */
+}
+
+.carousel-slide {
+    flex: 0 0 380px;
+    height: 500px;
+    background-size:cover;
+    background-position:center;
+    margin-right: 20px;
+}
+
+.carousel-slide:last-child {
+    margin-right: 0; /* Supprime la marge à droite de la dernière diapositive */
+}
+
+#input_radio{
+    display: none;
+}
+
+#slide1 {
+    background-image: url("pics/home/actu_img1.jpg");
+}
+
+#slide2 {
+    background-image: url("pics/home/actu_img2.jpg");
+}
+
+#slide3 {
+    background-image: url("pics/home/actu_img3.jpg");
+}
+
+#slide4 {
+    background-image: url("pics/home/actu_img4.jpg");
+}
+
+#slide5 {
+    background-image: url("pics/home/actu_img5.jpg");
+}
+
+#slide6 {
+    background-image: url("pics/home/actu_img6.jpg");
+}
+
+@keyframes carousel-animation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+}
+
+/* Footer */
+
+
+footer {
+    margin-top: 30vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.icon img {
+    width: 40px; /* Adjust the size of your social media icons */
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+/* Contact */
+
+
+
+
+
+
+
+
+
+/* Style pour le corps de la page */
+.contact-page {
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style pour le formulaire de contact */
+  .contact-form {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  /* Style pour le titre du formulaire */
+  .contact-form h1 {
+    font-family: 'Calibri';
+    color: white; /* Couleur du texte. */
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    font-size: 40px;
+    margin-bottom: 20px;
+  
+  }
+  
+  /* Style pour les étiquettes des champs */
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style pour les champs de saisie */
+  .contact-form input[type="text"],
+  .contact-form select,
+  .contact-form input[type="checkbox"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  /* Style pour le bouton d'envoi */
+  .contact-form button {
+    background-color: #004daaae;; /* Couleur de fond du bouton */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Style pour le bouton d'envoi au survol */
+  .contact-form button:hover {
+    background-color: #004daaae;; /* Couleur de fond modifiée au survol */
+  }
