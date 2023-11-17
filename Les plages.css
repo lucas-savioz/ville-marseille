@@ -1,0 +1,133 @@
+body {
+    background-color: #000;
+}
+
+.contain {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    font-size: 2rem;
+    top: 60%;
+    left: 2%;
+    color: white;
+}
+/*presentation of beach*/
+article {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 3s;
+}
+
+.card:hover img {
+    transform: rotateY(180deg);
+}
+
+.card .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: height 3s;
+}
+
+.card:hover .info {
+    height: 300px;
+}
+/*presentation of activity content*/
+.fete{
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card2 {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    width: calc(50% - 2rem);
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .card2 {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: calc(25% - 2rem);
+    }
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+/*carousel*/
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 1500px;
+    height: 200px;
+    border: solid whitesmoke;
+    box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 30px whitesmoke, 0 0 40px whitesmoke;
+margin-top: 100px;
+}
+.carousel img {
+    width: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
