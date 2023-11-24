@@ -1,0 +1,156 @@
+body{
+    background-color: wheat;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 105vh;
+    background-image: url("pics/home/home-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header-text {
+    text-align: center;
+    color: #fff;
+    width: max-content;
+    padding-top: 35vh;
+    text-shadow: 1px 1px 0 rgb(41, 32, 23), -1px -1px 0 rgb(41, 32, 23), 1px -1px 0 rgb(41, 32, 23), -1px 1px 0 rgb(41, 32, 23);
+}
+
+#header-text h1 {
+    font-size: 120px;
+    font-family: 'AlexBrush';
+    margin: 0;
+}
+
+/* Barre de navigation */
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(41, 32, 23);
+}
+
+/* Paramètrage des a */
+
+#navbar a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 20px;
+}
+
+/* Effet de survol des a */
+
+#navbar a:hover {
+    background-color: #004daaae;
+    color: #fff;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+article{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    border: solid;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 30px whitesmoke, 0 0 40px whitesmoke;
+}
+.museum {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.museum img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+}
+
+.museum h2 {
+    color: #333;
+}
+
+.museum p {
+    color: #666;
+}
+aside{
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    margin-right: 60%;
+    margin-left: 20px;
+}
+.car {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 20px;
+}
+
+.car:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.car img {
+    width: 100%;
+    height: 40%;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+}
+
+.car img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 30vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.icon img {
+    width: 40px; /* Adjust the size of your social media icons */
+    height: 40px;
+}
+
