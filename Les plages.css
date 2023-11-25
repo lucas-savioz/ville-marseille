@@ -220,17 +220,42 @@ footer {
     text-align: center;
 }
 
-.social-icons {
+.icon:hover {
+    transform: scale(2); /* Increase size on hover */
+    transition: 0.3s;
+  }
+
+  .social-icons {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .icon {
-    margin: 0 10px;
-}
-
-.icon img {
+    margin: 0 15px;
     width: 40px; /* Adjust the size of your social media icons */
     height: 40px;
 }
+
+/* Bouton revenir en haut */
+
+.box_top{
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.top {
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    background: #004daaae;
+    border-radius: 100px;
+    padding: 10px;
+
+  }
+  
+  p {
+    font-size: 25px;
+  }
